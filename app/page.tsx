@@ -21,7 +21,7 @@ export default function Home() {
             .
           </li>
           <li className="tracking-[-.01em]">
-            Hello world, from Ford
+            Hello world, from Ford Credit
           </li>
         </ol>
 
