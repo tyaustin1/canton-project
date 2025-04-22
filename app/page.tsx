@@ -3,19 +3,19 @@ export default function Home() {
       <div className="container">
         <div className="section">
           {/* Section 1 Content */}
-          Section 1
+          Team A
         </div>
         <div className="section">
           {/* Section 2 Content */}
-          Section 2
+          Team B
         </div>
         <div className="section">
           {/* Section 3 Content */}
-          Section 3
+          Team C
         </div>
         <div className="section">
           {/* Section 4 Content */}
-          Section 4
+          Team D
         </div>
       </div>
   );
