@@ -1,9 +1,11 @@
 async function getRandomImage() {
-  const response = await fetch("https://source.unsplash.com/random?team");
-  const buffer = await response.arrayBuffer();
-  const base64 = Buffer.from(buffer).toString('base64');
-  const imageType = response.headers.get('content-type') || 'image/jpeg';
-  return `data:${imageType};base64,${base64}`;
+  const response = await fetch("https://source.unsplash.com/random?team", {
+    redirect: 'follow' // Ensure redirects are followed
+  });
+
+  const imageUrl = response.url;
+
+  return imageUrl;
 }
 
 export default async function Home() {
