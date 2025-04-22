@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 async function getRandomImage() {
   const response = await fetch("https://source.unsplash.com/random?team");
   const buffer = await response.arrayBuffer();
@@ -14,9 +12,14 @@ export default async function Home() {
   return (
       <div className="container">
         <div className="row">
-          <div className="section">
+          <div className="section" style={{
+            backgroundImage: `url(${imageUrl})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            color: 'white', // Adjust text color for visibility
+            textAlign: 'center',
+          }}>
             {/* Section 1 Content */}
-            <Image src={imageUrl} alt="Team A" width={200} height={150} />
             Team A
           </div>
           <div className="section">
