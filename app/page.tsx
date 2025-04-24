@@ -26,7 +26,11 @@ export default async function Home() {
           <div className="section">{/* Section 2 Content */}Team B</div>
         </div>
         <div className="row">
-          <div className="section">{/* Section 3 Content */}Team C</div>
+
+
+          <div className="section">{/* Section 3 Content */}Team CCCC</div>
+
+
           <div className="section">{/* Section 4 Content */}Team D</div>
         </div>
       </div>
