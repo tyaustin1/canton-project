@@ -34,7 +34,7 @@ export default function Home() {
             {/* Section 1 Content */}
             Team A
           </div>
-          <div className="section">{/* Section 2 Content */}Team B</div>
+          <div className="section">{/* Section 2 Content */}Hello Canton from Team B</div>
         </div>
         <div className="row">
           <div className="section">{/* Section 3 Content */}Team C</div>
