@@ -1,12 +1,23 @@
+'use client'
+
+import { useEffect, useState } from "react";
+
 async function getRandomDogImage() {
   const response = await fetch("https://dog.ceo/api/breeds/image/random");
   const data = await response.json();
   return data.message;
 }
 
-export default async function Home() {
-  const imageUrl = await getRandomDogImage();
+export default function Home() {
+  const [imageUrl, setImageUrl] = useState("");
 
+  useEffect(() => {
+    const fetchImage = async () => {
+      const image = await getRandomDogImage();
+      setImageUrl(image);
+    };
+    fetchImage();
+  }, []);
   return (
       <div className="container">
         <div className="row">
